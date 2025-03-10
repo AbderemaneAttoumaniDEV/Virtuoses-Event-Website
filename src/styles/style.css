@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'countdownFont';
+    src: url('../fonts/DotGothic16-Regular.ttf') format('truetype');
+  }
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+} */
+
+body {
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    user-select: none;
+  }
+
+  footer {
+    position: fixed;
+    z-index: 2;
+    user-select: none;
+  }
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+    color: #f39c12;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+#countdown {
+    font-family: countdownFont;
+    margin-top: 0;
+}
+
+#copyright {
+    font-family: countdownFont;
+}
+#copyrightDesign {
+    font-family: countdownFont;
+}
+
+  /* From Uiverse.io by milegelu */ 
+.background3 {
+    width: 100%;
+    height: 100%;
+  
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+  }
+  
